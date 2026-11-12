@@ -1,0 +1,72 @@
+{
+  "id": "n01",
+  "orden": 1,
+  "titulo": "Primer día en equilibrio",
+  "subtitulo": "Equilibrio · Tutorial",
+  "escenario": "Tu mascota llega con 6,5 h de sueño, 1,4 L de agua y bastante calma. Hoy tiene ganas de moverse.",
+  "objetivo": "Elegí un entrenamiento que su energía pueda sostener y armá las 4 comidas para cerrar proteína, carbohidratos y grasas entre 85% y 115% de la meta.",
+  "leccion": "Cada día es un equilibrio entre lo que descansás, lo que gastás entrenando y lo que comés. Si entrenás más, tus metas de combustible suben; si dormiste poco, conviene bajar la intensidad.",
+  "habitos": {
+    "suenoHoras": 6.5,
+    "aguaLitros": 1.4,
+    "calma": 4
+  },
+  "metas": {
+    "p": 100,
+    "c": 230,
+    "f": 60
+  },
+  "entrenamientos": [
+    "descanso",
+    "yoga",
+    "caminata",
+    "fuerza",
+    "hiit"
+  ],
+  "entrenoPor": {
+    "pre": "merienda",
+    "post": "cena"
+  },
+  "comidas": [
+    {
+      "id": "desayuno",
+      "nombre": "Desayuno",
+      "hora": "08:00",
+      "capacidad": 3
+    },
+    {
+      "id": "almuerzo",
+      "nombre": "Almuerzo",
+      "hora": "13:00",
+      "capacidad": 4
+    },
+    {
+      "id": "merienda",
+      "nombre": "Merienda",
+      "hora": "17:00",
+      "capacidad": 3
+    },
+    {
+      "id": "cena",
+      "nombre": "Cena",
+      "hora": "21:00",
+      "capacidad": 4
+    }
+  ],
+  "mano": [
+    "huevos",
+    "pechuga",
+    "tofu",
+    "leche",
+    "lentejas",
+    "garbanzos",
+    "avena",
+    "pan_integral",
+    "arroz_integral",
+    "batata",
+    "banana",
+    "manzana",
+    "ensalada",
+    "palta"
+  ]
+}

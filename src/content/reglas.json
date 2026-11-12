@@ -1,0 +1,53 @@
+{
+  "banda": { "min": 0.85, "max": 1.15 },
+  "pesosEnergia": { "sueno": 0.45, "agua": 0.3, "calma": 0.25 },
+  "suenoPlenoHoras": 7,
+  "suenoMinimoHoras": 4,
+  "aguaMetaLitros": 2,
+  "reservaMinima": 10,
+  "bonoRecuperacion": 10,
+  "fibraMinima": 25,
+  "precisionMacros": 0.05,
+  "proteinaPorComida": 15,
+  "comidasConProteina": 3,
+  "xpPorEstrellas": [0, 20, 40, 60],
+  "textos": {
+    "macros": {
+      "titulo": "Macros cerrados",
+      "ok": "Proteína {p} g ({pPct}%), carbohidratos {c} g ({cPct}%) y grasas {f} g ({fPct}%): los tres dentro de la banda de 85–115% de tus metas.",
+      "falla": "Todavía no cierran los tres macros: {detalle}",
+      "leccion": "Los macros (proteína, carbohidratos y grasas) son los tres grandes aportes de energía. Acercarte a tu meta, sin obsesionarte con el gramo exacto, es la clave: por eso el juego premia la banda de 85–115%."
+    },
+    "energia": {
+      "titulo": "Energía sostenible",
+      "ok": "Empezaste con {base} de energía base y el entrenamiento gastó {costo}: te quedó una reserva de {reserva} (mínimo {minima}).",
+      "falla": "Con {base} de energía base, el entrenamiento ({costo}) deja una reserva de {reserva}: menos que el mínimo de {minima}. Hoy convenía una sesión más suave.",
+      "leccion": "Dormir, tomar agua y bajar el estrés llenan tu 'batería'. Entrenar fuerte con la batería baja rinde menos y aumenta el riesgo de lesión: elegí la intensidad según cómo llegás al día."
+    },
+    "proteina_repartida": {
+      "titulo": "Proteína repartida",
+      "ok": "{n} comidas con al menos {umbral} g de proteína. Repartirla ayuda a reparar y a sentir saciedad durante el día.",
+      "falla": "Solo {n} comida(s) llegan a {umbral} g de proteína; hacen falta {meta}. Probá mover proteína de la comida más cargada a una que quedó corta.",
+      "leccion": "El cuerpo aprovecha mejor la proteína si la recibe en varias comidas en lugar de una sola gran dosis."
+    },
+    "fibra": {
+      "titulo": "Fibra suficiente",
+      "ok": "{total} g de fibra (mínimo {minima} g). Eso cuida la digestión y la saciedad.",
+      "falla": "{total} g de fibra: faltan {faltan} g para llegar a {minima} g. Sumá verduras, legumbres, frutas o cereales integrales.",
+      "leccion": "La fibra viene de las plantas: verduras, frutas, legumbres y cereales integrales. Alimenta tu microbiota y alarga la saciedad."
+    },
+    "timing": {
+      "titulo": "Combustible antes, reparación después",
+      "ok": "La comida previa trajo {pre} g de carbohidratos (pedía {preMeta} g) y la posterior {post} g de proteína (pedía {postMeta} g).",
+      "falla": "Para {entreno}, la comida previa necesita ≥{preMeta} g de carbohidratos (hoy {pre} g) y la posterior ≥{postMeta} g de proteína (hoy {post} g).",
+      "noAplica": "Hoy no hace falta ajustar comidas alrededor del entrenamiento.",
+      "leccion": "Antes de entrenar, los carbohidratos llenan el tanque; después, la proteína ayuda a reparar el músculo. No hace falta nada extraño: es cuestión de ubicar bien las comidas."
+    },
+    "movimiento": {
+      "titulo": "Día con movimiento",
+      "ok": "Incluiste {entreno}: moverse todos los días, aunque sea suave, suma salud.",
+      "falla": "Hoy elegiste descansar. Descansar es válido, pero un día equilibrado también incluye algo de movimiento.",
+      "leccion": "Entrenar no es solo ir fuerte: caminar, hacer yoga o estirar también cuentan para tu bienestar."
+    }
+  }
+}

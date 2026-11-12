@@ -1,0 +1,164 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-ink: #07090d;
+  --color-panel: #0d1117;
+  --color-raised: #141a23;
+  --color-raised-2: #1b2330;
+  --color-line: #232c3a;
+  --color-text: #eef2f7;
+  --color-mute: #93a0b2;
+  --color-mint: #5ef2c0;
+  --color-coral: #ff7a6b;
+  --color-amber: #ffc15e;
+  --color-peri: #8a9bff;
+
+  --font-display: 'Bricolage Grotesque Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Figtree Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: var(--color-ink);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+/* En @layer base: un reset sin capa le ganaría a las utilidades de Tailwind (p. ej. text-ink en un botón menta). */
+@layer base {
+  button {
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-mint);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+.display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Superficie base de las tarjetas: un borde fino y un brillo superior casi imperceptible. */
+.panel {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0) 38%), var(--color-panel);
+  border: 1px solid var(--color-line);
+  border-radius: 22px;
+}
+
+.scroll-x {
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x proximity;
+}
+.scroll-x::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes subir {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes estrella {
+  0% {
+    transform: scale(0.2) rotate(-25deg);
+    opacity: 0;
+  }
+  65% {
+    transform: scale(1.18) rotate(6deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+@keyframes aparece {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.025);
+    box-shadow: 0 0 0 3px rgba(94, 242, 192, 0.25);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(94, 242, 192, 0);
+  }
+}
+@keyframes xp-flota {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-22px);
+  }
+}
+.anim-pop {
+  animation: pop 0.7s ease-out both;
+}
+.anim-xp {
+  animation: xp-flota 1.6s ease-out both;
+}
+.anim-subir {
+  animation: subir 0.42s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.anim-aparece {
+  animation: aparece 0.25s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

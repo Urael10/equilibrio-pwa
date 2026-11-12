@@ -1,0 +1,126 @@
+{
+  "nombreSugerido": "Cuernito",
+  "principal": "cuernito",
+  "personajes": [
+    {
+      "id": "cuernito",
+      "nombre": "Cuernito",
+      "genero": "m",
+      "rol": "Mascota principal",
+      "dominio": "Movimiento y entrenamiento",
+      "descripcion": "Un monstruito de cuernitos dorados que se pone la capucha para entrenar.",
+      "leccion": "Entrenar sube tus metas: si te movés más, necesitás carbohidratos antes y proteína después.",
+      "desbloqueo": null
+    },
+    {
+      "id": "mochi",
+      "nombre": "Mochi",
+      "genero": "m",
+      "rol": "Compañero",
+      "dominio": "Nutrición",
+      "descripcion": "Un bollito de arroz suave y redondo: la nutrición hecha ternura.",
+      "leccion": "Los macros no se persiguen al gramo: entre 85 % y 115 % de la meta ya cuenta como cerrado.",
+      "desbloqueo": {
+        "regla": "macros",
+        "texto": "Cerrá proteína, carbohidratos y grasas dentro de la banda, aunque sea una vez."
+      }
+    },
+    {
+      "id": "nubi",
+      "nombre": "Nubi",
+      "genero": "f",
+      "rol": "Compañera",
+      "dominio": "Sueño y calma",
+      "descripcion": "Una nubecita con sueño que cuida el descanso y la calma.",
+      "leccion": "Dormir, tomar agua y mantener la calma fijan tu energía base: entrenar fuerte con poco sueño gasta más de lo que tenés.",
+      "desbloqueo": {
+        "regla": "energia",
+        "texto": "Terminá un día con energía sostenible: que te quede reserva después de entrenar."
+      }
+    },
+    {
+      "id": "pomelo",
+      "nombre": "Pomelo",
+      "genero": "m",
+      "rol": "Compañero",
+      "dominio": "Fruta y fibra",
+      "descripcion": "Una rodaja de cítrico con carita: fruta, fibra y energía limpia.",
+      "leccion": "La fibra viene de frutas, verduras, legumbres y cereales integrales; ayuda a la saciedad y a la digestión.",
+      "desbloqueo": {
+        "regla": "fibra",
+        "texto": "Llegá al mínimo de fibra del día sumando frutas, verduras o legumbres."
+      }
+    }
+  ],
+  "etapas": [
+    {
+      "id": "cria",
+      "nombre": "Cría",
+      "nivelMin": 1,
+      "xpMin": 0,
+      "descripcion": "Recién llegó. Aprende a comer, descansar y moverse."
+    },
+    {
+      "id": "joven",
+      "nombre": "Joven",
+      "nivelMin": 3,
+      "xpMin": 282,
+      "descripcion": "Ya tiene rutina: se nota en su energía y su brillo."
+    },
+    {
+      "id": "atleta",
+      "nombre": "Atleta",
+      "nivelMin": 6,
+      "xpMin": 1118,
+      "descripcion": "Constante y en equilibrio. Tus hábitos se notan en cada salto."
+    }
+  ],
+  "estadosTexto": {
+    "m": {
+      "radiante": "radiante",
+      "contenta": "contento",
+      "tranquila": "tranquilo",
+      "bajon": "con un bajón",
+      "hambrienta": "con hambre",
+      "cansada": "cansado"
+    },
+    "f": {
+      "radiante": "radiante",
+      "contenta": "contenta",
+      "tranquila": "tranquila",
+      "bajon": "con un bajón",
+      "hambrienta": "con hambre",
+      "cansada": "cansada"
+    }
+  },
+  "frases": {
+    "radiante": [
+      "¡Hoy me siento increíble! Gracias por cuidar el equilibrio.",
+      "Energía al máximo. ¡Sigamos así!"
+    ],
+    "contenta": [
+      "¡Qué buen día! Me están cuidando muy bien.",
+      "Vamos muy bien. Un ajuste más y queda redondo."
+    ],
+    "tranquila": [
+      "Todo en calma, pero se puede afinar el plan.",
+      "Todo tranquilo. Miremos qué macro está más lejos de su meta."
+    ],
+    "bajon": [
+      "Hoy me falta algo… revisemos las comidas.",
+      "Siento que algo no está equilibrado. Probemos otro armado."
+    ],
+    "hambrienta": [
+      "¡Mi pancita suena! Todavía no armamos suficientes comidas.",
+      "Tengo hambre. Elegí alimentos de la despensa y colocalos en el plato."
+    ],
+    "cansada": [
+      "Me quedé sin energía. Quizá hoy conviene un entrenamiento más suave.",
+      "Necesito recuperar energía: más descanso, agua y calma."
+    ]
+  },
+  "bienvenida": [
+    "Hoy me gustaría moverme y comer bien. ¿Armamos el día juntos?",
+    "Cada hábito cuenta: dormir, tomar agua, comer y entrenar. Empecemos."
+  ]
+}

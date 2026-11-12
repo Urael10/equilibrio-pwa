@@ -1,0 +1,32 @@
+[
+  {
+    "id": "descanso", "nombre": "Descanso", "icono": "🛌",
+    "descripcion": "Día de recuperación: el cuerpo también se adapta cuando descansa.",
+    "costo": 0, "extra": { "p": 0, "c": 0, "f": 0 },
+    "combustiblePre": 0, "reparacionPost": 0, "movimiento": false
+  },
+  {
+    "id": "yoga", "nombre": "Yoga suave", "icono": "🧘",
+    "descripcion": "Movilidad y respiración. Gasta poca energía y baja el estrés.",
+    "costo": 10, "extra": { "p": 0, "c": 0, "f": 0 },
+    "combustiblePre": 0, "reparacionPost": 0, "movimiento": true
+  },
+  {
+    "id": "caminata", "nombre": "Caminata activa", "icono": "🚶",
+    "descripcion": "40 minutos a paso vivo. Suma movimiento sin exigir demasiado.",
+    "costo": 20, "extra": { "p": 0, "c": 15, "f": 0 },
+    "combustiblePre": 0, "reparacionPost": 0, "movimiento": true
+  },
+  {
+    "id": "fuerza", "nombre": "Fuerza", "icono": "🏋️",
+    "descripcion": "Sesión de cuerpo completo. Pide combustible antes y proteína después.",
+    "costo": 40, "extra": { "p": 10, "c": 30, "f": 0 },
+    "combustiblePre": 25, "reparacionPost": 25, "movimiento": true
+  },
+  {
+    "id": "hiit", "nombre": "HIIT intenso", "icono": "⚡",
+    "descripcion": "Intervalos de alta intensidad. Gran gasto: exige buen descanso previo.",
+    "costo": 80, "extra": { "p": 10, "c": 50, "f": 0 },
+    "combustiblePre": 30, "reparacionPost": 25, "movimiento": true
+  }
+]

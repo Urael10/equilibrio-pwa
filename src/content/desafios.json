@@ -1,0 +1,83 @@
+[
+  {
+    "id": "proteina_alta",
+    "tipo": "macro",
+    "titulo": "Proteína a tope",
+    "descripcion": "Llegá a 90 g de proteína en el día.",
+    "metrica": "proteina_g",
+    "objetivo": 90,
+    "xp": 15
+  },
+  {
+    "id": "fibra_dia",
+    "tipo": "macro",
+    "titulo": "Día de fibra",
+    "descripcion": "Sumá 25 g de fibra con frutas, verduras y legumbres.",
+    "metrica": "fibra_g",
+    "objetivo": 25,
+    "xp": 15
+  },
+  {
+    "id": "macros_cerrados",
+    "tipo": "macro",
+    "titulo": "Macros en la banda",
+    "descripcion": "Cerrá proteína, carbohidratos y grasas dentro de la banda.",
+    "metrica": "macros_cerrados",
+    "objetivo": 3,
+    "xp": 25
+  },
+  {
+    "id": "macros_precisos",
+    "tipo": "macro",
+    "titulo": "Puntería fina",
+    "descripcion": "Dejá dos macros a ±5 % de su meta.",
+    "metrica": "macros_precisos",
+    "objetivo": 2,
+    "xp": 30
+  },
+  {
+    "id": "a_moverse",
+    "tipo": "entrenamiento",
+    "titulo": "A moverse",
+    "descripcion": "Elegí un entrenamiento que cuente como movimiento.",
+    "metrica": "movimiento",
+    "objetivo": 1,
+    "xp": 10
+  },
+  {
+    "id": "timing_entreno",
+    "tipo": "entrenamiento",
+    "titulo": "Combustible y reparación",
+    "descripcion": "Entrená con carbohidratos antes y proteína después.",
+    "metrica": "timing",
+    "objetivo": 1,
+    "xp": 20
+  },
+  {
+    "id": "proteina_repartida",
+    "tipo": "habito",
+    "titulo": "Proteína repartida",
+    "descripcion": "Poné al menos 15 g de proteína en 3 comidas.",
+    "metrica": "comidas_con_proteina",
+    "objetivo": 3,
+    "xp": 20
+  },
+  {
+    "id": "energia_activa",
+    "tipo": "habito",
+    "titulo": "Entrenar sin vaciarse",
+    "descripcion": "Entrená y terminá el día con 50 o más de energía.",
+    "metrica": "energia_activa",
+    "objetivo": 50,
+    "xp": 15
+  },
+  {
+    "id": "comer_suficiente",
+    "tipo": "habito",
+    "titulo": "Plato completo",
+    "descripcion": "Llegá al 90 % de las kcal de tu meta.",
+    "metrica": "kcal_pct",
+    "objetivo": 90,
+    "xp": 10
+  }
+]
